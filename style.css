@@ -1,0 +1,155 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #EBEBEB;
+}
+
+/* Layout principal */
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 60px 20px 20px; /* aumentamos o espaço superior */
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-top: 80px; /* ainda mais espaço em telas menores */
+    }
+}
+
+
+/* Avatar */
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+
+    /* box-shadow: 2px 0px 30px rgba(255, 119, 0, 0.555);  */
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1); /* Deixa branca */
+}
+
+/* Biografia */
+.bio {
+    font-size: 12px;
+    margin: 10px 0 25px;
+}
+
+/* Botão */
+.button_tipografia {
+    display: inline-block;
+    padding: 10px 38px;
+    border-radius: 6px;
+    border: 1px solid #F24800;
+    background: rgba(255, 255, 255, 0.08);
+    color: #FFF;
+    text-decoration: none;
+    box-shadow: 0px 4px 20px rgba(204, 95, 0, 0.41);
+    font-size: 10px;
+    margin-bottom: 12px;
+}
+
+/* Redes Sociais */
+.icons_links {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.icons_links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.icons_links img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1); /* Fica branco */
+    transition: transform 0.2s;
+}
+
+.icons_links img:hover {
+    transform: scale(1.1); /* efeito sutil ao tocar */
+}
+
+
+/* Cards com rolagem lateral */
+.cards_scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+}
+
+
+.cards_scroll::-webkit-scrollbar {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 260px;
+  background: #111;
+  border-radius: 13px;
+  color: #FFF;
+  padding: 16px;
+  text-align: left;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Espaço entre os elementos internos */
+  border: 1px solid #222; /* opcional, dá contorno mesmo com pouca altura */
+}
+
+
+.card h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #F24800;
+}
+
+.card p {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #ccc;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  color: #ffffff60;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 10px;
+  opacity: 0.8;
+  z-index: 10;
+}
