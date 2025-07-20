@@ -1,3 +1,10 @@
+
+/* Fonte para o botão "Fale comigo" e "H3" dos cards */
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+/* Fonte padrão */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* Reset */
 * {
     margin: 0;
@@ -6,7 +13,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'arial', sans-serif;
     background-color: #000;
     color: #EBEBEB;
 }
@@ -39,13 +46,19 @@ body {
 
 /* Logo */
 .logo {
-    width: 120px;
+    width: 130px;
     margin-bottom: 10px;
     filter: brightness(0) invert(1); /* Deixa branca */
 }
 
 /* Biografia */
 .bio {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
     font-size: 12px;
     margin: 10px 0 25px;
 }
@@ -59,7 +72,10 @@ body {
     background: rgba(255, 255, 255, 0.08);
     color: #FFF;
     text-decoration: none;
-    box-shadow: 0px 4px 20px rgba(204, 95, 0, 0.41);
+    box-shadow: 0px 4px 20px rgba(204, 95, 0, 0.496);
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 10px;
     margin-bottom: 12px;
 }
@@ -101,7 +117,6 @@ body {
     scrollbar-width: none; /* Firefox */
 }
 
-
 .cards_scroll::-webkit-scrollbar {
   display: flex;
   gap: 10px;
@@ -113,7 +128,7 @@ body {
 .card {
   flex: 0 0 auto;
   width: 260px;
-  background: #111;
+  background: #212121;
   border-radius: 13px;
   color: #FFF;
   padding: 16px;
@@ -127,14 +142,20 @@ body {
   border: 1px solid #222; /* opcional, dá contorno mesmo com pouca altura */
 }
 
-
 .card h3 {
-    font-size: 14px;
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
     margin-bottom: 8px;
     color: #F24800;
 }
 
 .card p {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
     font-size: 12px;
     line-height: 1.4;
     color: #ccc;
@@ -146,7 +167,7 @@ footer {
   left: 0;
   width: 100%;
   background: #000;
-  color: #ffffff60;
+  color: #ffffffaa;
   text-align: center;
   padding: 8px 0;
   font-size: 10px;
